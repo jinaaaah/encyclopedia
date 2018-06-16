@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Lyon";
+    src: url("../fonts/Lyon Text-Regular.otf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lyon_Italic";
+    src: url("../fonts/Lyon Text-Semibold Italic.otf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    position: relative;
+    font-family: Lyon;
+    font-size: 0;
+    width: 1080px;
+    height: 1920px;
+    padding: 0;
+    margin: auto;
+    background: white;
+    text-align: center;
+}
+.contents{
+    font-size: 56pt;
+    line-height: 77pt;
+    margin: 136px 98px;
+    text-align: center;
+}
+.landing{
+    font-family: Lyon_Italic;
+    display: inline;
+}
+.landing:hover{
+    text-decoration-line: underline;
+}
+.counts{
+    display: inline;
+}
+.footer{
+    position: absolute;
+    right: 98px;
+    left: 98px;
+    top: calc(1920px - 88px - 64pt);
+    height: 64pt;
+    display: inline-block;
+}
+.footer_contents_container{
+    display: inline;
+    font-size: 46pt;
+    height: 46pt;
+}
+.footer_contents{
+    display: inline-block;
+    height: 46pt;
+    float: right;
+}
+#day{
+    float: left;
+}
+.day_count{
+    display: inline;
+}

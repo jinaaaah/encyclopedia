@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Lyon";
+    src: url("../fonts/Lyon Text-Regular.otf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lyon_Italic";
+    src: url("../fonts/Lyon Text-Regular Italic.otf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lyon_Semibold";
+    src: url("../fonts/Lyon Text-Semibold.otf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    font-family: Lyon;
+    font-size: 0;
+    width: 1080px;
+    height: 1920px;
+    margin: auto;
+    background: white;
+    text-align: center;
+    position: relative;
+}
+.container{
+    width: 100%;
+    line-height: 60pt;
+    font-size: 40pt;
+    display: inline-block;
+}
+.header{
+    margin: 75px 98px;
+    height: 130px;
+}
+.icon{
+    display: inline-block;
+    text-align: center;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+#back{
+    margin-top: calc((130px - 85px) * 0.25);
+    float: left;
+}
+#write{
+    margin-top: calc((130px - 129px) * 0.25);
+    margin-right: 98px;
+    float: right;
+}
+#delete{
+    margin-top: calc((130px - 129px) * 0.25);
+    float: right;
+}
+#write > img{
+    float: right;
+}
+.title_bar{
+    height: 64pt;
+    margin: calc(186px - 130px) 98px;
+    font-family: Lyon_Italic;
+    font-size: 64pt;
+}
+.title_contents{
+    display: inline;
+    text-align: left;
+    font-size: 64pt;
+    float: left;
+}
+.counts{
+    float: right;
+}
+.hiddenScroll{
+    width: 100%;
+    max-height: 1287px;
+    margin-top: calc(388px - 186px - 64pt);
+    display: inline-block;
+    overflow: hidden;
+}
+.contents_container{
+    width: calc(100% + 50px);
+    max-height: 1287px;
+    display: inline-block;
+    overflow: scroll;
+}
+.contents{
+    width: 884px;
+    text-align: left;
+    margin: 0 98px;
+    margin-bottom: 144px;
+}
+.corpus{
+    display: inline-block;
+}
+.comments{
+    width: 100%;
+    font-family: Lyon_Italic;
+    margin-top: 40px;
+    display: inline-block;
+}
+.pop-up{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1920px;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.94;
+    filter: alpha(opacity=94);
+    position: relative;
+    z-index: 1;
+}
+.pop_container{
+    position: absolute;
+    width: 100%;
+    height: 1920px;
+    top: 0;
+    z-index: 2;
+}
+#close{
+    margin-top: calc((130px - 220px) * 0.25);
+    float: left;
+}
+#save{
+    margin-top: calc((130px - 235px) * 0.25);
+    float: right;
+}
+#close > img{
+    width: 100%;
+    height: 100%;
+}
+#save > img{
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+.pop_contents_container{
+    margin: calc(682px - 130px) 89px;
+    width: 902px;
+    height: 441px;
+}
+.pop_row{
+    display: inline-block;
+}
+.pop_contents{
+    font-family: Lyon_Semibold;
+    width: 400px;
+    font-size: 33pt;
+    display: inline-block;
+}
+#pop_row_1{
+    margin-bottom: 63px;
+}
+#pop_contents_row_11{
+    margin-right: 95px;
+}
+#pop_contents_row_21{
+    display: inline;
+}
+label{
+    float: left;
+}
+textarea{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 33pt;
+    float: left;
+    width: 400px;
+    height: 63px;
+}
+#pop_contents_row_21 > textarea{
+    width: 902px;
+    height: 250px;
+}

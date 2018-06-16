@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>anger</title>
+    <link rel="stylesheet" href="../public/stylesheets/emotions.css">
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="header">
+            <div class="icon" id="back" style="cursor: pointer"><img src="../public/images/back_icon.png" height="85" width="176"/></div>
+            <div class="icon" id="delete" style="cursor: pointer"><img id = "deleteImg" src="../public/images/delete_icon.png" height="129" width="129"/></div>
+            <div class="icon" id="write" style="cursor: pointer"><img src="../public/images/write_icon.png" height="129" width="129"/></div>
+        </div>
+    </div>
+    <div class="container title_container">
+        <div class="title_bar">
+            <div class="title_contents">Anger</div>
+            <div class="title_contents counts">0</div>
+        </div>
+    </div>
+    <div class = "hiddenScroll">
+        <div class="container contents_container">
+            <div class="contents">
+                <div class="corpus">He was out of temper; and he looked up with an angry scowl.</div>
+                <div class="comments">Charles Dickens, Oliver Twist</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop-up">
+    <div class="background"></div>
+    <div class="pop_container">
+        <div class="header">
+            <div class="icon" id="close"><img src="../public/images/close_icon.png" height="220" width="126"/></div>
+            <div class="icon" id="save"><img src="../public/images/save_icon.png" height="235" width="174"/></div>
+        </div>
+        <div class="pop_contents_container">
+            <form>
+                <div class="pop_row" id="pop_row_1">
+                    <div class="pop_contents" id="pop_contents_row_11">
+                        <label>Author</label><br>
+                        <textarea name="author"></textarea>
+                    </div>
+                    <div class="pop_contents">
+                        <label>Title</label><br>
+                        <textarea name="title"></textarea>
+                    </div>
+                </div>
+                <div class="pop_row">
+                    <div class="pop_contents" id="pop_contents_row_21">
+                        <label>Corpus</label><br>
+                        <textarea name="corpus"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../public/javascripts/back.js"></script>
+<script type="text/javascript" src="../public/javascripts/bundle.js"></script>
+</html>
